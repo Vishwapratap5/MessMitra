@@ -17,7 +17,7 @@ public class UserAuthServiceImpl implements UserAuthService {
     @Autowired
     AuthRepo authRepo;
 
-    private BCryptPasswordEncoder bCryptPasswordEncoder=new BCryptPasswordEncoder(12);
+   final private BCryptPasswordEncoder bCryptPasswordEncoder=new BCryptPasswordEncoder(12);
 
     @Override
     public ResponseDTO RegisterUser(User user) {
